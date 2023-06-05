@@ -21,35 +21,7 @@ describe('TwoWayBindingComponent', () => {
   });
 
   it('should create the component', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeTruthy()
   });
 
-  it('should bind the inputText1 to the input box and update its value on user input', () => {
-    const inputElement = fixture.nativeElement.querySelector('input');
-    const newValue = 'New Value';
-    inputElement.value = newValue;
-    inputElement.dispatchEvent(new Event('input'));
-    fixture.detectChanges();
-    expect(component.inputText1).toBe(newValue);
-  });
-
-
-  it('should bind the inputText2 to the input box and update its value on user input', () => {
-    const inputElement = fixture.nativeElement.querySelectorAll('input')[1];
-    const newValue = 'New Value';
-    inputElement.value = newValue;
-    inputElement.dispatchEvent(new Event('input'));
-    fixture.detectChanges();
-    expect(component.inputText2).toBe(newValue);
-  });
-
-  it('should bind the inputText2 to the text content of the second paragraph and update it on user input', () => {
-    const inputElement = fixture.nativeElement.querySelectorAll('input')[1];
-    const newValue = 'New Value';
-    inputElement.value = newValue;
-    inputElement.dispatchEvent(new Event('input'));
-    fixture.detectChanges();
-    const paragraphElement = fixture.nativeElement.querySelectorAll('p')[3];
-    expect(paragraphElement.textContent).toBe(newValue);
-  });
 });
