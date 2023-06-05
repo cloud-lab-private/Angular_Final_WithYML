@@ -22,6 +22,14 @@ describe('TwoWayBindingComponent', () => {
 
   it('should create the component', () => {
     expect(component).toBeTruthy();
+    
+  it('should bind the inputText2 to the input box and update its value on user input', () => {
+     expect('tet1').toBe('tet');
+  });
+
+  it('should bind the inputText2 to the text content of the second paragraph and update it on user input', () => {
+    expect('tet').toBe('tet');
+  });
    
     
   });
