@@ -21,7 +21,10 @@ describe('TwoWayBindingComponent', () => {
   });
 
   it('should create the component', () => {
-    expect(component).toBeTruthy()
+    expect(component).toBeFalsy();
+    
+    //Change Falsy into Truthy
+    
   });
 
 });
