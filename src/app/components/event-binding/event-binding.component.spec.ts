@@ -24,6 +24,9 @@ describe('EventBindingComponent', () => {
 
   it('should display "button 2 not clicked" initially', () => {
     const messageElement = fixture.nativeElement.querySelectorAll('p')[3];
-    expect(messageElement.textContent).toContain('button 2 not clicked');
+    expect(messageElement.textContent).toContain('button  not clicked');
+    
+    //change "button not clicked" to "button 2 not clicked"
+    
   });
 });
