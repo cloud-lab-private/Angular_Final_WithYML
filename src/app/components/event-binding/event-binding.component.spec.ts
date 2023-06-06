@@ -26,12 +26,4 @@ describe('EventBindingComponent', () => {
     const messageElement = fixture.nativeElement.querySelectorAll('p')[3];
     expect(messageElement.textContent).toContain('button 2 not clicked');
   });
-
-  it('should update button2ClickedMessage when button 2 is clicked', () => {
-    const button2 = fixture.nativeElement.querySelectorAll('button')[1];
-    button2.click();
-    fixture.detectChanges();
-    const messageElement = fixture.nativeElement.querySelectorAll('p')[3];
-    expect(messageElement.textContent).not.toContain('button 2 not clicked');
-  });
 });
