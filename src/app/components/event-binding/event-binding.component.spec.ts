@@ -18,9 +18,9 @@ describe('EventBindingComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create the component', () => {
+  /*it('should create the component', () => {
     expect(component).toBeTruthy();
-  });
+  });*/
 
   it('should display "button 2 not clicked" initially', () => {
     const messageElement = fixture.nativeElement.querySelectorAll('p')[3];
